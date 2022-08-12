@@ -1,0 +1,562 @@
+html,body{
+    min-height: 100vh;
+}
+
+body{
+    background-color: rgb(231, 226, 226);
+    
+}
+
+header{
+    height: 65px;
+    margin-left: 50%;
+    margin-right: 40px;
+    margin-top: 20px;
+    background-color: white;
+    border:  3px solid #e62f0f;
+    border-style: groove;
+    
+}
+
+footer{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+    float: left;
+	background-color: whitesmoke;
+	border-radius: 10px 10px 0% 0%;
+	color: black;
+	text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+/* Section */
+section.first-part{
+    height: 530px;
+    background-color: whitesmoke;
+    border-radius: 15px 50px;
+    margin-top: 70px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 4px solid white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+section.second-part{
+    height: 850px;
+    background-color: rgb(231, 226, 226);
+    border-radius: 10%;
+    margin-bottom: 100px;   
+}
+
+section.last-part{
+    height: 200px;
+    background-color: rgb(231, 226, 226);
+    margin-top: 150px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* BOITES */
+.image{
+    margin: 10px;
+    float: right;
+}
+
+/* Défillés d'image */
+
+#caroussel{
+    width: 870px;
+    overflow: hidden;
+    float: right;
+    margin-top: 10px;
+    border-radius: 0% 10% 10% 0%;
+    margin-right: 20px;
+    margin-left: 12.5vh;
+}
+
+.images{
+    display: flex;
+    animation-duration: 25s;
+    animation-name: myimages;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+.images:hover{
+    animation-play-state: paused;
+}
+
+@keyframes myimages{
+    0%{
+        transform: translateX(0px);
+    }
+
+    33%{
+        transform: translateX(-870px);
+    }
+
+    66%{
+        transform: translateX(-1740px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+.left-text{
+    float: left;
+}
+
+/* Boite actualités */
+
+.actualites{
+    height: 825px;
+    background-color: whitesmoke;
+    border-radius: 10%;
+    border: 1px solid black;
+    margin-right: 450px;
+    margin-left: 450px;
+    margin-top: 35px;
+    padding: 1px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.factu{
+    margin: 50px;
+    height: 35%;
+    width: 35%;
+    float: left;
+    border: 2px solid black;
+    border-radius: 10px 60px;
+}
+
+.dactu{
+    margin: 50px;
+    height: 35%;
+    width: 35%;
+    float: right;
+    border: 2px solid black;
+    border-radius: 60px 10px;
+}
+
+.tactu{
+    margin-left: 50px;
+    height: 35%;
+    width: 35%;
+    float: left;
+    border: 2px solid black;
+    border-radius: 10px 60px;
+}
+
+.qactu{
+    margin-right: 50px;
+    height: 35%;
+    width: 35%;
+    float: right;
+    border: 2px solid black;
+    border-radius: 60px 10px;
+}
+
+.cote_left{
+    float: left;
+    width: 370px;
+}
+
+.cote_right{
+    float: right;
+    width: 370px;
+}
+
+/* Titre des boites d'actualités */
+
+.boititre{
+    width: 100%;
+    height: 30px;
+}
+
+/* Partenairiat + Liens */
+
+.partenaire{
+    margin-left: 15%;
+}
+
+.partenaire img{
+    display: inline-block;
+    height: 120px;
+    width: 262px;
+    border: 1px solid gray;
+    margin-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* BARRE SÉPARATRICE */
+
+hr.first{
+    margin-top: 120px;
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-bottom: 120px;
+    border: 3px solid whitesmoke;
+}
+
+hr.actu-espace{
+    padding-bottom: 2px;
+    background-color: gainsboro;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+hr.surlignage{
+    float: left;
+    margin-left: 10%;
+} 
+
+/* Texte */
+
+h1.cr{
+    margin-left: 5.3vh;
+    margin-top: 10px; 
+    font-family: 'Bitter', serif;
+    color: #e62f0f;
+    float: left;
+    
+}
+
+h1.lcrf{
+    display: none;
+    margin-left: 5.3vh;
+    margin-top: 30px;
+    font-family: 'Acme', sans-serif;
+    color: #e62f0f;
+    float: left;    
+}
+
+h1.actu-title{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    color: #e62f0f;
+    /* text-decoration: underline;
+    text-decoration-color: white; */
+    letter-spacing : 1px;
+
+}
+
+h1.actu-undertitre{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "Bitter", "Times New Roman", sans-serif;
+    color: gray;
+    text-align: center;
+}
+
+h1.description-title{
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    color: grey; 
+}
+
+p.first-part{
+    
+    font-size: 15px;
+    position: relative;
+    font-weight: normal;
+    font-family: "Bitter", "Times New Roman", sans-serif;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+p.retour{
+    text-decoration: none;
+}
+
+a.retour{
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    color: black;
+    font-family: cursive;
+}
+
+a.retour:hover{
+    
+    text-decoration: none;
+    color: #e62f0f;
+    
+}
+
+a.lien-actu{
+    text-decoration: none;
+}
+
+a.lien-actu:hover{
+    text-decoration: underline;
+    text-decoration-color: grey;
+}
+
+/* IMAGES */
+
+img.accueil{
+    margin-top: 10px;
+    border-radius: 0% 15% 15px 0%;
+    border: solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+/* Image logo reséau social */
+img.logo{
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+img.inser{
+    height: 56px;
+    width: 57px;
+    float: left;
+    margin-left: 15px;
+    
+}
+
+img.photo-actu{
+    width: 270px;
+    height: 160px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+img.photo-actu:hover{
+    filter: blur(1px);
+}
+
+img.image{
+    width: 870px;
+    height: 490px;
+    margin-right: 20px;
+    position: relative;
+}
+
+img.banniere_left{
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-left: 65px;
+    margin-top: 15vh;
+    border: 3px solid black;  
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+img.banniere_left:hover{
+    filter: blur(1px);
+}
+
+img.banniere_right{
+    float: right;
+    width: 300px;
+    height: 200px;
+    margin-right: 65px;
+    margin-top: 15vh;
+    border: 3px solid black; 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+img.banniere_right:hover{
+    filter: blur(1px);
+}
+
+
+/*MENU NAV*/
+
+/* Barre de navigation */
+.navbar{
+    height: 60px;
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navbar ul{
+    margin-top: 35px;
+    
+}
+
+/* Le block de la liste */
+.navbar li{
+    height: auto;
+    width: 7.5vw;
+    float: left;
+    text-align: center;
+    list-style: none;
+    font-family: cursive;
+    margin: 2vh;
+    background-color: whitesmoke;
+       
+}
+
+/* Don block */
+.navbar li.donnation{ 
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    font-family: 'Merriweather', serif;
+
+}
+
+/* Le texte du block*/
+.navbar a.lien {
+    margin-top: 2.5vh;
+    text-decoration: none;
+    color: black;
+    font-family: "Bitter", "Times New Roman", serif;
+    font-weight: bold;
+}
+
+/* Lorsque la souris est dessus */
+a.lien:hover{
+    text-decoration: underline;
+    background-color: rgb(231, 226, 226);
+}
+
+/* Bouton Don */
+a.don{
+    border-radius: 10% 10% 10% 10%;
+    background-color: #e62f0f;
+    color: white;
+    padding: 11px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Bouton Don losque la souris est au dessus */
+
+a.don:hover{
+    background-color: white;
+    border: 1px solid #e62f0f;
+    color: #e62f0f;
+}
+
+li.liste{
+    margin-left: 20%;
+    font-size: 12px;
+    font-family: cursive;
+}
+
+/* Liste - Bas de page */
+
+ul.bottom-list{
+    margin-left: 27.5%;
+    margin-top: 35px;
+}
+
+ul.bottom-list_two{
+    margin-left: 17.5%;
+}
+
+li.bottom-list{
+    display: inline;
+    margin-left: 50px;
+    
+}
+
+li.bottom-list_two{
+    display: inline;
+    margin-left: 75px;
+    
+}
+
+a.lien-bottom{
+    text-decoration: none;
+    font: inherit;  
+    color: rgb(139, 139, 139);
+}
+
+a.lien-bottom:hover{
+    text-decoration: underline;
+    
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1480px){
+
+    section.first-part{
+        width: auto;
+        height: 470px;
+    }
+
+    #caroussel{
+        width: 90%;
+        height: 90%;
+    }
+    h1.cr{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1140px){
+
+    section.first-part{
+        width: auto;
+        height: 400px;
+    }
+
+    #caroussel{
+        width: 100%;
+        height: 100%;
+    }
+
+    img.inser{
+        width: 45px;
+        height: 45px;
+        margin-left: 4.5vh;
+    }
+
+
+    h1.cr{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px){
+
+    section.first-part{
+        width: auto;
+        height: 330px;
+    }
+
+    #caroussel{
+        width: 100%;
+        height: 100%;
+    }
+    img.logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 410px){
+
+    section.first-part{
+        width: 260px;
+        height: auto;
+    }
+
+    .caroussel{
+        width: 100%;
+        height: 100%;
+    }
+}
